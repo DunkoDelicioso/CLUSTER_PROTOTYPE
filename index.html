@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Sketch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="p5.speech.js"></script>
+    <script src="sketch.js"></script>
+
+    
+
+
+ 
+
+  <body>
+
+    <!-- The navbar at the side of the page -->
+    <div class="wrapper"> 
+        <div class="sidebar" style="padding-top: 200px;">  
+          <nav>
+            <ul>
+              <li> <a href="http://duncanfigurski.com" target="_blank"><img src="LOGONav.jpg" alt="logo" width = "1000" style="padding-bottom: 90px;"></a> </li> 
+              <li> <div id="sketch-container" style="padding-bottom: 150px;"></div> </li> 
+              <li style="background-color:lavenderblush; padding-top: 100px; outline: 2px dashed blue;" > 
+               <p class="head_3"></p><p id="user_input"></p>
+                <button class="button" id="submit"><b> >> </b></button>
+                <input class="input" type="text" id="myText" placeholder="Ask Cluster-Bot" style="padding-left: 50px;">
+                <p class="head_3" style="background-color:lightsalmon; margin: 50px;">
+                  <b style="color: magenta; ">CB: </b> <span class="head_4" id="output"> 
+                  </p>
+                <br>
+                <br>
+                <br>
+                
+              </li> 
+            </ul>
+            
+
+          </nav>
+        </div>
+
+
+
+      <!-- The main content on the page (scroller)-->
+        <div class="main_content" id="title_message">
+          <h1 class="head_1" > Our molecules will change your life... </h1>
+          <!-- <hr style="width:95%;text-align:center;color: black;" size="30"> -->
+            <h2 class="head_2" > How can Cluster Corp fix you? </h2>
+
+
+            <div id="light">
+              <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+              <video id="VisaChipCardVideo" width="3200" controls>
+                  <source src="Grand Opening(small).mp4" type="video/mp4">
+                  <!--Browser does not support <video> tag -->
+                </video>
+            </div>
+
+
+            
+            <div id="fade" onClick="lightbox_close();"></div>
+            
+            <div>
+              <a href="#" onclick="lightbox_open();">
+
+
+            <video id="centVid"class="cent_vid" width="3200" height="2400" autoplay loop >
+              <source src="TV.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+            <script> document.getElementById('centVid').play();  </script>
+
+          </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+            
+
+            <div class="row">
+              <h1 class="head_1" > What is Cluster Corp? </h1>
+              <div class="column" >
+                
+                        Cognitive Dissonance is one of the fundamental psychological drivers of
+                        our society today.  It is essentially a discomfort experienced by holding two conflicting beliefs at the same time.
+                        This dissonance can be used as a powerful motivator to change ones life, or to rationalize past decisions.
+                        At Cluster Corp we use this concept to help you:
+                        <br>
+                        <br>
+                        <b> <p style="text-align: center;">ASSIGN A VALUE TO YOUR LIFE
+                        <br>
+                        <br>
+                        &
+                        <br>
+                        <br>
+                        THEN LEVERAGE IT</b>
+                        <br>
+                        <br>
+                        </p>
+                        By investing capital in intangible, hypothetical “molecules” with the pretense of self improvment you set the stakes for your own growth -
+                        one dollar at a time.
+
+              </div>
+              <div class="column">
+                Molecules are ficticious particles you assign a psychic value to. These molecules are then sold as NFTs.
+
+                By spending money on these assets you reinforce your goals by psychologically asserting that the money was not spent wastefully. The desire to rationalize this purchase drives the customer to “leverage their life” in the fullest sense possible.
+                
+                In the end the customer either wastes their money, or grows as a means to rationalize the purchase. 
+                <br>
+                <br>
+                It’s simple & effective.
+                <br>
+                <br>
+                <img src="CLUSTER(BLACK,TRANSPARENT)-01.png" width= "800" style="margin-left: 150px;" >
+
+                
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+           
+           
+
+            <div class="row">
+              <h1 class="head_1" style="padding-right: 420px;"> How can I get <br> started? </h1>
+              <div class="column" style="background-color: white; text-align: center;" >
+                1. Take a look at the regiments and molecules we have available now. See which plan works best for your lifestyle and goals.
+                <br>
+                <br>
+                <img src="NewNEWMol copy.png" style="padding-left: 90px">
+
+
+              </div>
+              <div class="column" style="background-color: white; text-align: center;">
+                2. Get ready for your life to change.<br>
+                Get ready to be fixed. <br>
+                Get ready to feel loved. <br>
+                <br>
+                <br>
+                
+                
+
+      
+                <img src="NewNEWMol.png" style="padding-left: 90px; padding-top: 20px;">
+
+                
+               
+              </div>
+
+              
+
+
+            
+          
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+    
+
+        <div class="row">
+          <h1 class="head_1" style="padding-right: 420px; background-color: white;"> Who are we? </h1>
+          <div class="column" style="background-color: lavenderblush;" >
+            <img src="WHITEMAN.jpeg">
+            <div style="padding-right: 120px;">
+            <b>Chip Donhram</b>    
+            <br>CEO and Founder 
+            <br>
+            <br>Chip Developed the prototype model for Cluster-Corp back in 2009 and has since traveled the world absorbing new technologies for self improvment. He's an avid birdwatcher and bodysurfer living on Nantucket Island.
+          </div>
+
+          </div>
+          <div class="column" style="background-color: lavenderblush">
+            <img src="AMBIGUOUS MAN.jpeg" style="padding-left: 120px;">
+            <div style="padding-left: 120px;">
+            <b>Laura Heltzman</b>
+            <br>Developmental Chief
+            <br>
+            <br> Proffesor Heltzman Teaches Flexible Manipulation at Cluster University and formalized the regiment timing for hypothetical molecules. She loves spicy food, and raises potbelly pigs with her Partner in Virginia. 
+
+            </div>
+
+            
+            
+            <br>
+            <br>
+          </div>
+          
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+<div class="head_3" style="background-color:lavenderblush; padding-top: 100px; outline: 2px dashed blue; margin-right: 200px;" >
+      <form id="frm" name="submit-to-google-sheet" style="align-content: center; text-align: center; font-family: 'Darker Grotesque', sans-serif;">
+        We are continuously making advances, hosting events and highlighting clients that have succsessfully completed our program. Please give us your email so we can keep you up to date on everything cluster corp related. <br><br>
+        <input class="input" style="width: 20%; display: flex; position: relative; text-align: center; margin-left: 40%;"  id="4" name="email" type="email" placeholder="Email" required>
+        keep me updated
+        <button id="button" type="submit" class="button1" ><<</button>
+
+        <p id="text" style="color: white; text-align:center; font-family:Didact Gothic; font-size: 18px;"></p>
+
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz5MzpWdOpxbdqe2EecA6W9wVrAoUMoEg5pxkyQl7jm-GLmWg0fvxP29iCad8jQIf9u8A/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+
+        form.addEventListener('submit', e => {
+
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    console.log('Success!', response); 
+                    resetForm();
+            })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+        function resetForm(){
+            document.getElementById('frm').reset();
+        }
+
+
+    </script>
+
+  </body>
+
+
+</html>
